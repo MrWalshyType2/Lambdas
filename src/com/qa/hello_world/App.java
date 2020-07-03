@@ -34,6 +34,7 @@ public class App {
 
 		h.sayMessage();
 
+		// Best practice
 		Consumer.ConsumerMath addition = (num1, num2) -> {
 			return num1 + num2;
 		};
