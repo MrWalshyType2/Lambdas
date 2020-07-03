@@ -41,6 +41,10 @@ public class App {
           
           goodbyeService1.sayMessage("Fred");
           goodbyeService1.sayMessage("Bob");
+          
+          // No parameters
+          Ball ball = () -> { System.out.println("You hit it!"); };
+          ball.hit();
        }
         
        interface MathOperation {
@@ -57,5 +61,9 @@ public class App {
         
        private int operate(int a, int b, MathOperation mathOperation) {
           return mathOperation.operation(a, b);
+       }
+       
+       interface Ball {
+    	   void hit();
        }
     }
